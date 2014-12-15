@@ -1,19 +1,22 @@
 'use strict';
 
-describe('Directive: secretChar', function () {
+describe('Directive: keyboard', function () {
+
+  //var element;
+  var scope;
 
   // load the directive's module
   beforeEach(function () {
     module('hangmanAppInternal');
+    inject(function ($rootScope) {
+      scope = $rootScope.$new();
+    });
   });
 
-  //var element,
-  //  scope;
   //
-  //function compile(char) {
+  //function compile(template) {
   //  inject(function ($rootScope, $compile) {
-  //    scope = $rootScope.$new();
-  //    element = angular.element('<secret-char value="' + char + '"></secret-char>');
+  //    element = angular.element(template);
   //    element = $compile(element)(scope);
   //  });
   //  scope.$digest();

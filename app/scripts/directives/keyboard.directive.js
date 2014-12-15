@@ -3,12 +3,12 @@
 (function () {
 
   /* @ngInject */
-  function secretChar() {
+  function keyboard() {
     return {
     };
   }
 
   angular
     .module('hangmanAppInternal')
-    .directive('secretChar', secretChar);
+    .directive('keyboard', keyboard);
 })();
