@@ -3,8 +3,7 @@
 (function () {
 
   /* @ngInject */
-  function MainController(Game) {
-    this.game = new Game('boom');
+  function MainController() {
   }
 
   angular

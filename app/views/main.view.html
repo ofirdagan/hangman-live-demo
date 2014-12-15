@@ -1,13 +1,1 @@
-<div class="page" ng-controller="MainController as main">
-  <h1 class="title">Hangman</h1>
-
-  <div class="phrase">
-    <secret-char class="secret-char" ng-repeat="char in main.game.getPhrase() track by $index"
-                 value="{{char}}"></secret-char>
-  </div>
-  <div class="keyboard">
-    <div class="key" ng-repeat="key in main.game.abc" ng-click="main.game.revealChar(key)"
-         ng-class="{'was-guessed': main.game.wasGuessed(key)}">{{key}}
-    </div>
-  </div>
-</div>
+<h1 class="title">Hangman</h1>
