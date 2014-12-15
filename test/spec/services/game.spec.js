@@ -12,10 +12,10 @@ describe('Service: game', function () {
   });
 
   // instantiate service
-  function aGame(word) {
+  function aGame(secret) {
     var game;
     inject(function (Game) {
-      game = new Game(word);
+      game = new Game(secret);
     });
     return game;
   }
