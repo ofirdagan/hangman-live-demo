@@ -1,0 +1,59 @@
+$font-helvetica45: "HelveticaNeueW01-45Ligh", "HelveticaNeueW02-45Ligh", "HelveticaNeueW10-45Ligh", sans-serif;
+$font-helvetica55: "HelveticaNeueW01-55Roma", "HelveticaNeueW02-55Roma", "HelveticaNeueW10-55Roma", sans-serif;
+$font-helvetica65: "HelveticaNeueW01-65Medi", "HelveticaNeueW02-65Medi", "HelveticaNeueW10-65Medi", sans-serif;
+$font-helvetica75: "HelveticaNeueW01-75Bold", "HelveticaNeueW02-75Bold", "HelveticaNeueW10-75Bold", sans-serif;
+
+.container {
+  margin: auto;
+  width: 300px;
+}
+
+.page {
+  width: 300px;
+  font-family: $font-helvetica55;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+  text-align: center;
+}
+
+.page .title {
+  font-family: $font-helvetica75;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.phrase {
+}
+
+.secret-char {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.keyboard {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.key {
+  user-select: none;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 3px;
+  width: 25px;
+  HEIGHT: 40px;
+  line-height: 40px;
+  border: rgb(0, 123, 128) 1px solid;
+
+  &.was-selected {
+    text-decoration: line-through;
+    background-color: #b1b1b1;
+  }
+}

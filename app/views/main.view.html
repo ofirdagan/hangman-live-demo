@@ -1,1 +1,10 @@
-<h1 class="title">Hangman</h1>
+<div class="page" ng-controller="MainController as main" ng-init="main.startNewGame('tdd  works')">
+  <h1 class="title">Hangman</h1>
+
+  <div class="phrase">
+    <div class="secret-char"
+         ng-repeat="char in main.game.getRevealedLettersArray() track by $index">{{char}}
+    </div>
+  </div>
+  <keyboard class="keyboard" keys="main.game.charactersInLanguage" was-selected="main.game.isLetterSelected"></keyboard>
+</div>
