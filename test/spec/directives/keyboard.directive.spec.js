@@ -13,7 +13,6 @@ describe('Directive: keyboard', function () {
     });
   });
 
-
   function compile(template) {
     inject(function ($rootScope, $compile) {
       element = angular.element(template);

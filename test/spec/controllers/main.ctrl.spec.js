@@ -42,5 +42,4 @@ describe('Controller: MainController', function () {
     expect(mainController.game.selectLetter).toHaveBeenCalledWith('a');
   });
 
-
 });
