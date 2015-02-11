@@ -7,6 +7,11 @@ describe('Controller: MainController', function () {
   // load the controller's module
   beforeEach(function () {
     module('hangmanAppInternal');
+    module({
+      Game: jasmine.createSpy().andReturn({
+        selectLetter: jasmine.createSpy('letterSelected')
+      })
+    });
     mainController = aMainController();
   });
 
@@ -20,4 +25,20 @@ describe('Controller: MainController', function () {
     });
     return mainController;
   }
+
+  it('should create a game with a guess word', inject(function (Game) {
+    mainController.startNewGame('boom');
+
+    expect(mainController.game).toBeDefined();
+    expect(Game).toHaveBeenCalledWith('boom');
+  }));
+
+  it('should call selectLetter on letterSelected event', inject(function (hangmanEvents) {
+    mainController.startNewGame('Albert Einstein');
+
+    scope.$broadcast(hangmanEvents.letterSelected, 'a');
+
+    expect(mainController.game.selectLetter).toHaveBeenCalledWith('a');
+  }));
+
 });
