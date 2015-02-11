@@ -8,7 +8,7 @@ Talk's Slides: [TDD in javascript - Not a myth](http://slides.com/ofird/tdd-in-j
 
 The project has 7 branches. One for each step of the talk.
 
-* [first](../first) - clean repository
+* [first](https://github.com/ofirdagan/hangman-live-demo/tree/first) - clean repository
 * game - after writing the Game factory service
 * keyboard - after writing the keyboard directive
 * main-ctrl - after writing the main controller
