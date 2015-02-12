@@ -2,7 +2,7 @@
 
 describe('Directive: keyboard', function () {
 
-  //var element;
+  var element;
   var scope;
 
   // load the directive's module
@@ -13,13 +13,16 @@ describe('Directive: keyboard', function () {
     });
   });
 
-  //
-  //function compile(template) {
-  //  inject(function ($rootScope, $compile) {
-  //    element = angular.element(template);
-  //    element = $compile(element)(scope);
-  //  });
-  //  scope.$digest();
-  //}
+  it('should compile keyboard', function () {
+    compile('<keyboard></keyboard>');
+  });
+
+  function compile(template) {
+    inject(function ($rootScope, $compile) {
+      element = angular.element(template);
+      element = $compile(element)(scope);
+    });
+    scope.$digest();
+  }
 
 });
