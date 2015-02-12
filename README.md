@@ -20,3 +20,9 @@ The project has 7 branches. One for each step of the talk.
 * [main-view](https://github.com/ofirdagan/hangman-live-demo/tree/main-view) - adding html
 * [style](https://github.com/ofirdagan/hangman-live-demo/tree/style) - adding style
 * [final](https://github.com/ofirdagan/hangman-live-demo/tree/final) - the end result
+
+## Full Hangman Game
+
+You can find the fully functional including server api calls and E2E tests here:
+
+[Angular Hangman TDD](https://github.com/ofirdagan/angular-hangman-tdd)
