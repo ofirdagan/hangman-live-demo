@@ -7,7 +7,6 @@ Talk's Slides: [TDD in javascript - Not a myth](http://slides.com/ofird/tdd-in-j
 ## Talk's Videos
 
 * [As presented on Angular JS IL meetup at Google Campus TLV](https://www.youtube.com/watch?v=olxbXe-eL2o)
-* As presented on NG-NL conference - comming soon
 
 ## Project Walkthrough
 
