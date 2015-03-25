@@ -20,7 +20,7 @@
 
       this.getRevealedLettersArray = function () {
         return guessWord.split('').map(function (char) {
-          var shouldShowChar = char === ' ' || selectedLetters.indexOf(char) !== -1;
+          var shouldShowChar = selectedLetters.indexOf(char) !== -1;
           return shouldShowChar ? char : '_';
         });
       };
